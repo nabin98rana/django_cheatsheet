@@ -23,11 +23,10 @@ class CheatSheetModel(models.Model):
     verbose_name = _("Cheatsheet model")
     verbose_name_plural = _("Cheatsheet models")
  
-
-    def __str__(self):
+  def __str__(self):
       return self.model_name 
     
-    def get_absolute_url(self):
+  def get_absolute_url(self):
       """
       Returns the url to access a particular instance of the model.
       """
